@@ -1,0 +1,38 @@
+{
+  "name": "genpark-browser-native-wasm-microcontainer-node-runtime-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Browser-native WebAssembly microcontainer node runtime booting instant fullstack web development sandboxes.",
+  "author": "genpark",
+  "category": "wasm-container",
+  "tags": [
+    "webcontainers",
+    "bolt-new",
+    "browser-node",
+    "wasm-runtime",
+    "instant-sandbox"
+  ],
+  "inputs": {
+    "package_json_manifest": {
+      "type": "object"
+    },
+    "cold_start_target_ms": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "container_session_id": {
+      "type": "string"
+    },
+    "boot_latency_ms": {
+      "type": "integer"
+    },
+    "container_status": {
+      "type": "string"
+    },
+    "live_preview_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
